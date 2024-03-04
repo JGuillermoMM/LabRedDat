@@ -1,6 +1,5 @@
 #Estos son los paquetes que pense que utilizaria xD
 import streamlit as st
-import matplotlib.pyplot as plt
 import numpy as np
 from scipy.special import comb
 import plotly.express as px
