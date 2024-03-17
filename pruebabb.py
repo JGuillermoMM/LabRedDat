@@ -103,7 +103,7 @@ if selected=='Graficas':
   # Display the DataFrame in Streamlit
  st.dataframe(df)
 
-#--------------------
+#---------------------------------------------------------------
 # Grafica
   
 # Para la grafica
