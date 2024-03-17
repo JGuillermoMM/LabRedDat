@@ -100,6 +100,9 @@ if selected=='Graficas':
  
 
  df = pd.read_csv("ConteosDeCarasPorPareja.csv")
+  # Display the DataFrame in Streamlit
+ st.dataframe(df)
+
 #--------------------
 # Grafica
   
@@ -122,8 +125,7 @@ def leer_archivo_py():
     leer_archivo_py()
 #-----------------------------------------------------------------
     
-    # Display the DataFrame in Streamlit
- st.dataframe(df)
+  
 
     # Display some statistics about the DataFrame
  st.write(f"The DataFrame has {len(df)} rows and {len(df.columns)} columns.")
