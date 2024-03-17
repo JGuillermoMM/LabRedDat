@@ -85,7 +85,7 @@ if selected=="Intro":
                 asdddddddddddddddddddd
                 """)
 
-    st.divider()
+    
 
 
     
@@ -109,12 +109,8 @@ if selected=='Graficas':
 #About Page
 if selected=='Info': 
     st.title('Datos')
-    with st.container():
-        col1=st.columns(1)
-        col1.write('')
-        col1.write('')
-        col1.write('')
-        col1.write('**Creadores:**    Guillermo y Shawn')
-        col1.write('**Institución:**    M.S. Applied Statistics')
-        col1.write('**Contact:**    g.monterroso.m@gmail.com ')
+    st.markdown(
+                """
+                asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                """)
        
