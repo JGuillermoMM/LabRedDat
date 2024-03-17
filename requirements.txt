@@ -10,18 +10,3 @@ scikit_learn==0.24.1
 streamlit_lottie==0.0.3
 streamlit_option_menu==0.3.2
 pyarrow==10.0.1
-
-keybert==0.6.0
-keyphrase_vectorizers==0.0.10
-matplotlib==3.5.2
-Pillow==9.2.0
-pydub==0.25.1
-railroad==0.5.0
-sentence_transformers==2.2.2
-spacy==3.2.0
-streamlit_option_menu==0.3.2
-textacy==0.11.0
-umap-learn==0.5.3
-wordcloud==1.8.2.2
-en_core_web_sm @ https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.2.0/en_core_web_sm-3.2.0.tar.gz
-cluestar @ git+https://github.com/Buckeyes2019/cluestar_2.git
