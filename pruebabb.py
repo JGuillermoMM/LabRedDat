@@ -100,7 +100,28 @@ if selected=='Graficas':
  
 
  df = pd.read_csv("ConteosDeCarasPorPareja.csv")
+#--------------------
+# Grafica
+  
+# Para la grafica
+def leer_archivo_py():
+    try:
+        with open("Practica1.py", "r") as archivo:
+          
+            contenido = archivo.read()
+            
+            st.text_area("Contenido del archivo", contenido)
+    except FileNotFoundError:
+        st.error("error 402.")
 
+# Interfaz de usuario def main():
+    st.title("aaaaa")
+    st.write("sdasdasdasd.")
+
+
+    leer_archivo_py()
+#-----------------------------------------------------------------
+    
     # Display the DataFrame in Streamlit
  st.dataframe(df)
 
