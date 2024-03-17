@@ -41,7 +41,7 @@ def pull_clean():
 
 #Options Menu
 with st.sidebar:
-    selected = option_menu('Menu', ["Intro", 'Graficas','Info', 'Distribucion binomial'], 
+    selected = option_menu('Menu', ["Intro", 'Graficas', 'Distribucion binomial', 'Info'], 
         icons=['comment-alt','stats','info-circle'],menu_icon='intersect', default_index=0)
     lottie = load_lottiefile("digglet.json")
     st_lottie(lottie,key='loc')
@@ -124,6 +124,8 @@ def main():
     st.write("sdasdasdasd.")
 
     leer_archivo_py()
+if __name__ == "__main__":
+    main()
 
 #-----------------------------------------------------------------
     
@@ -138,5 +140,3 @@ if selected=='Info':
                 asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
                 """)
 
-if __name__ == "__main__":
-    main()
