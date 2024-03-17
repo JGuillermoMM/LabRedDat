@@ -36,8 +36,7 @@ def load_lottiefile(filepath: str):
 @st.cache_data
 def pull_clean():
     master_zip=pd.read_csv('ConteoDeCarasPorParejas.csv',dtype={'ZCTA5': str})
-    master_city=pd.read_csv('MASTER_CITY.csv',dtype={'ZCTA5': str})
-    return master_zip, master_city
+    return master_zip
 
 
 
@@ -88,11 +87,7 @@ if selected=="Intro":
 
     st.divider()
 
-    #Tutorial Video
-    st.header('Tutorial Video')
-    video_file = open('Similo_Tutorial3_compressed.mp4', 'rb')
-    video_bytes = video_file.read()
-    st.video(video_bytes)
+
     
 #Search Page
 if selected=='Graficas':
