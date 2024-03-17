@@ -112,7 +112,7 @@ if selected=='Graficas':
 # Grafica
 if selected=='Distribucion binomial':
 
-def leer_archivo_py():
+def leer_archivo_py('Practica1.py'):
     try:
         with open("Practica1.py", "r") as archivo:
             contenido = archivo.read()
@@ -124,7 +124,7 @@ def main():
     st.title("aaaaa")
     st.write("sdasdasdasd.")
 
-    leer_archivo_py()
+    leer_archivo_py('Practica1.py')
 
 #-----------------------------------------------------------------
     
