@@ -68,22 +68,12 @@ if selected=="Intro":
                 """
                 )
      
-        
-# Encabezado para los objetivos
 st.header('Objetivos')
-
-# Lista de objetivos
-objetivos = [
-    "Entender el fenómeno de eventos binarios repetidos.",
-    "Calcular probabilidades específicas relacionadas con el número de éxitos.",
-    "Aplicar la distribución binomial en la toma de decisiones.",
-    "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
-    "Realizar análisis de riesgo y control de calidad utilizando la distribución binomial."
-]
-
-# Mostrar objetivos
-for objetivo in objetivos:
-    st.markdown(f"- {objetivo}")
+            st.markdown(
+                """
+                 asdassad
+                """
+                )
 
 
 
