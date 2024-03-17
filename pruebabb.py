@@ -51,7 +51,11 @@ with st.sidebar:
 if selected=="Intro":
     #Header
     st.title('Distribución Binomial')
-    st.subheader('*asdasdassssssssssssssssssssssssssssssssssss.*')
+   # ecuacion de la distribucion binomial "https://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial"
+    st.latex(r'''
+    P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}
+    ''')
+
 
     st.divider()
 
@@ -65,7 +69,9 @@ if selected=="Intro":
             st.header('Resumen')
             st.markdown(
                 """
-                asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
+                Una distribución binomial es un modelo matemático que representa la probabilidad de obtener cierta cantidad de
+                éxitos en un número fijo de intentos independientes, donde cada intento solo puede tener dos resultados posibles: éxito o fracaso.
+                Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
                 """
                 )
             st.header('Objetivos')
