@@ -67,19 +67,17 @@ if selected=="Intro":
                 Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
                 """
                 )
-     
-st.header('Objetivos')
+     st.header('Objetivos')
             st.markdown(
                 """
-                 asdassad
+                asdddddddddddddddddddd
                 """
                 )
 
 
 
-        
-            
-        with col2:
+
+      with col2:
             st.header('Marco teorico')
             st.markdown(
                 """
@@ -93,6 +91,7 @@ st.header('Objetivos')
                 """)
 
     
+
 
 
     
