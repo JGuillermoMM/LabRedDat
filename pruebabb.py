@@ -110,7 +110,7 @@ if selected=='Graficas':
 if selected=='Info': 
     st.title('Datos')
     with st.container():
-        col1,col2=st.columns(1)
+        col1=st.columns(1)
         col1.write('')
         col1.write('')
         col1.write('')
