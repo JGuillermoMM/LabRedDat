@@ -50,7 +50,7 @@ with st.sidebar:
 if selected=="Intro":
     #Header
     st.title('Distribución Binomial')
-    st.subheader('* st.latex(r'''    P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}    ''')*')
+    st.latex(r'''    P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}    ''')
                  
 
     st.divider()
