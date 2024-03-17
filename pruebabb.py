@@ -155,15 +155,19 @@ if selected=="Intro":
                 )
             #---------------------------------------
             st.header('Objetivos')
-             generales = [
+        # Lista de objetivos generales
+objetivos_generales = [
     "Determinar probabilidades particulares relacionadas con el número de éxitos.",
     "Aplicar la distribución binomial en la toma de decisiones."
 ]
 
+# Convertir los objetivos en una lista HTML
+objetivos_html = "<ul>" + "".join([f"<li>{objetivo}</li>" for objetivo in objetivos_generales]) + "</ul>"
+
 # Mostrar los objetivos generales
-st.write('### Objetivos generales:')
-for objetivo in generales:
-    st.markdown(f"- {objetivo}")
+st.markdown(f"### Objetivos generales:\n{objetivos_html}", unsafe_allow_html=True) 
+
+        
 #"Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
             #-----------------------------------------------
 >>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
