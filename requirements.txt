@@ -10,9 +10,7 @@ scikit_learn==0.24.1
 streamlit_lottie==0.0.3
 streamlit_option_menu==0.3.2
 pyarrow==10.0.1
+spacy==3.2.0
 
 
 
-
-keybert==0.6.0
-keyphrase_vectorizers==0.0.10
