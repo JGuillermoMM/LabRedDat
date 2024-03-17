@@ -92,13 +92,21 @@ if selected=="Intro":
 =======
     #Header
     st.title('Distribución Binomial')
-       # ecuacion de la distribucion binomial "https://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial"
+   # ecuacion de la distribucion binomial "https://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial"
     st.latex(r'''
     P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}
     ''')
 >>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
 
+<<<<<<< HEAD
  st.divider()
+=======
+
+    st.divider()
+>>>>>>> 6b45c4fc394bddcdf3df55cc0c87ae797e571483
+
+
+  
 
     #Use Cases
  with st.container():
@@ -116,6 +124,7 @@ if selected=="Intro":
 <div class="big-title">Resumen</div>
 """, unsafe_allow_html=True)
             st.markdown(
+<<<<<<< HEAD
 <<<<<<< HEAD
                 """
                 La distribución binomial es una función que describe la probabilidad de obtener un número específico de éxitos
@@ -148,13 +157,16 @@ if selected=="Intro":
 #Columna dos de introducción       
 =======
                 """ 
+=======
+                """
+>>>>>>> 6b45c4fc394bddcdf3df55cc0c87ae797e571483
                 Una distribución binomial es un modelo matemático que representa la probabilidad de obtener cierta cantidad de
                 éxitos en un número fijo de intentos independientes, donde cada intento solo puede tener dos resultados posibles: éxito o fracaso.
                 Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
                 """
                 )
-            #---------------------------------------
             st.header('Objetivos')
+<<<<<<< HEAD
         # Lista de objetivos generales
 objetivos_generales = [
     "Determinar probabilidades particulares relacionadas con el número de éxitos.",
@@ -171,6 +183,14 @@ st.markdown(f"### Objetivos generales:\n{objetivos_html}", unsafe_allow_html=Tru
 #"Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
             #-----------------------------------------------
 >>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
+=======
+            st.markdown(
+                """
+                asdddddddddddddddddddd
+                """
+                )
+            
+>>>>>>> 6b45c4fc394bddcdf3df55cc0c87ae797e571483
         with col2:
              st.markdown("""
               <style>
@@ -213,6 +233,8 @@ st.markdown(f"### Objetivos generales:\n{objetivos_html}", unsafe_allow_html=Tru
                 """
                 asdddddddddddddddddddd
                 """)
+
+    
 
     
 
