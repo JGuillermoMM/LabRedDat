@@ -46,12 +46,12 @@ with st.sidebar:
     lottie = load_lottiefile("digglet.json")
     st_lottie(lottie,key='loc')
 
+
 #Intro Page
 if selected=="Intro":
     #Header
     st.title('Distribución Binomial')
-    st.latex(r'''    P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}    ''')
-                 
+    st.subheader('*asdasdassssssssssssssssssssssssssssssssssss.*')
 
     st.divider()
 
@@ -62,22 +62,17 @@ if selected=="Intro":
             st.header('Resumen')
             st.markdown(
                 """
-                Una distribución binomial es un modelo matemático que representa la probabilidad de obtener cierta cantidad de
-                éxitos en un número fijo de intentos independientes, donde cada intento solo puede tener dos resultados posibles: éxito o fracaso.
-                Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
+                asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
                 """
                 )
-     st.header('Objetivos')
+            st.header('Objetivos')
             st.markdown(
                 """
                 asdddddddddddddddddddd
                 """
                 )
-
-
-
-
-      with col2:
+            
+        with col2:
             st.header('Marco teorico')
             st.markdown(
                 """
@@ -91,6 +86,7 @@ if selected=="Intro":
                 """)
 
     
+
 
 
 
