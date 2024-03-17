@@ -79,7 +79,8 @@ elif selected == 'Distribucion binomial':
 
         leer_archivo_py()
 
-   
+   if __name__ == "__main__":
+        main()
 
 # About Page
 elif selected == 'Info': 
@@ -87,5 +88,4 @@ elif selected == 'Info':
     st.markdown("""
         asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     """)
-     if __name__ == "__main__":
-        main()
+     
