@@ -67,6 +67,7 @@ if selected=="Intro":
                 Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
                 """
                 )
+            
             st.header('Objetivos')             
             objetivos = [
               " Determinar probabilidades particulares relacionadas con el número de éxitos.",
@@ -74,10 +75,7 @@ if selected=="Intro":
               "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
             ]
 
-# Mostrar objetivos
-st.write('### Objetivos:')
-for objetivo in objetivos:
-    st.write(f"- {objetivo}")
+
            
             
         with col2:
