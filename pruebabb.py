@@ -70,15 +70,14 @@ if selected=="Intro":
                 Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
                 """
                 )
+            #---------------------------------------
             st.header('Objetivos')
-            st.markdown(
-                """
+            objetivos = [
               " Determinar probabilidades particulares relacionadas con el número de éxitos.",
               "Aplicar la distribución binomial en la toma de decisiones.",
               "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
-                """
-                )
-            
+            ]
+            #-----------------------------------------------
         with col2:
             st.header('Marco teorico')
             st.markdown(
