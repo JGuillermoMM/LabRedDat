@@ -65,7 +65,7 @@ elif selected == 'Graficas':
 
 # Grafica
 elif selected == 'Distribucion binomial':
-    def leer_archivo_py(archivo):
+    def leer_archivo_py():
         try:
             with open("Practica1.py", "r") as archivo:
                 contenido = archivo.read()
@@ -77,10 +77,9 @@ elif selected == 'Distribucion binomial':
         st.title("aaaaa")
         st.write("sdasdasdasd.")
 
-        leer_archivo_py(archivo)
+        leer_archivo_py()
 
-    if __name__ == "__main__":
-        main()
+   
 
 # About Page
 elif selected == 'Info': 
@@ -88,3 +87,5 @@ elif selected == 'Info':
     st.markdown("""
         asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     """)
+     if __name__ == "__main__":
+        main()
