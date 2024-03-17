@@ -77,6 +77,8 @@ if selected=="Intro":
               "Aplicar la distribución binomial en la toma de decisiones.",
               "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
             ]
+            st.write('### Objetivos:')
+
             #-----------------------------------------------
         with col2:
             st.header('Marco teorico')
