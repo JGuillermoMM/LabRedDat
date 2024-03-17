@@ -73,7 +73,9 @@ if selected=="Intro":
             st.header('Objetivos')
             st.markdown(
                 """
-                asdddddddddddddddddddd
+              " Determinar probabilidades particulares relacionadas con el número de éxitos.",
+              "Aplicar la distribución binomial en la toma de decisiones.",
+              "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
                 """
                 )
             
