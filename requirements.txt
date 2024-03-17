@@ -16,4 +16,3 @@ pyarrow==10.0.1
 
 keybert==0.6.0
 keyphrase_vectorizers==0.0.10
-Pillow==9.2.0
