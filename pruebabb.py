@@ -71,14 +71,15 @@ if selected=="Intro":
                 """
                 )
             #---------------------------------------
-            st.header('Oobjetivos')
-            = [
+            st.header('Objetivos')
+             generales= [
               " Determinar probabilidades particulares relacionadas con el número de éxitos.",
               "Aplicar la distribución binomial en la toma de decisiones.",
-              "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
             ]
-            st.write('### Objetivos:')
-
+            st.write('### generales:')
+            for generales in Objetivos:
+    st.markdown(f"- {generales}")
+#"Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
             #-----------------------------------------------
         with col2:
             st.header('Marco teorico')
