@@ -42,7 +42,7 @@ def pull_clean():
 
 #Options Menu
 with st.sidebar:
-    selected = option_menu('Menu', ["Intro", 'Graficas','Info', 'Distribución binomial'], 
+    selected = option_menu('Menu', ["Intro", 'Graficas','Info', 'Distribucion binomial'], 
         icons=['comment-alt','stats','info-circle'],menu_icon='intersect', default_index=0)
     lottie = load_lottiefile("digglet.json")
     st_lottie(lottie,key='loc')
@@ -103,33 +103,34 @@ if selected=='Graficas':
   # Display the DataFrame in Streamlit
  st.dataframe(df)
 
+   # Display some statistics about the DataFrame
+ st.write(f"The DataFrame has {len(df)} rows and {len(df.columns)} columns.")
+
+
+
 #---------------------------------------------------------------
 # Grafica
-if selected=='Distribución binomial':
+if selected=='Distribucion binomial':
 
-# Para la grafica
 def leer_archivo_py():
     try:
         with open("Practica1.py", "r") as archivo:
-          
             contenido = archivo.read()
-            
             st.text_area("Contenido del archivo", contenido)
     except FileNotFoundError:
-        st.error("error 402.")
+        st.error("El archivo no fue encontrado.")
 
-# Interfaz de usuario def main():
+def main():
     st.title("aaaaa")
     st.write("sdasdasdasd.")
 
-
     leer_archivo_py()
+
 #-----------------------------------------------------------------
     
   
 
-    # Display some statistics about the DataFrame
- st.write(f"The DataFrame has {len(df)} rows and {len(df.columns)} columns.")
+ 
 #About Page
 if selected=='Info': 
     st.title('Datos')
