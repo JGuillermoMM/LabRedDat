@@ -11,6 +11,8 @@ import json
 
 from streamlit_lottie import st_lottie
 
+
+
 # Layout
 st.set_page_config(
     page_title="Practica 1",
@@ -77,10 +79,7 @@ elif selected == 'Distribucion binomial':
         st.title("aaaaa")
         st.write("sdasdasdasd.")
 
-        leer_archivo_py()
-
-   if __name__ == "__main__":
-        main()
+    main()
 
 # About Page
 elif selected == 'Info': 
@@ -88,4 +87,3 @@ elif selected == 'Info':
     st.markdown("""
         asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
     """)
-     
