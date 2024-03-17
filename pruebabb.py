@@ -51,12 +51,12 @@ with st.sidebar:
 if selected=="Intro":
     #Header
     st.title('Distribución Binomial')
-       # ecuacion de la distribucion binomial "https://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial"
-    st.latex(r'''
-    P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}
-    ''')
+    st.subheader('*asdasdassssssssssssssssssssssssssssssssssss.*')
 
     st.divider()
+
+
+  
 
     #Use Cases
     with st.container():
@@ -68,24 +68,13 @@ if selected=="Intro":
                 asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
                 """
                 )
-
-            #---------------------------------------
-        
-      st.header('Objetivos')
+            st.header('Objetivos')
             st.markdown(
                 """
                 asdddddddddddddddddddd
                 """
                 )
-
-
- #objetivos       
-#"Evaluar la precisión de modelos y experimentos mediante la distribución binomial."
-#" Determinar probabilidades particulares relacionadas con el número de éxitos.",
- #             "Aplicar la distribución binomial en la toma de decisiones.",
-              
-
-            #-----------------------------------------------
+            
         with col2:
             st.header('Marco teorico')
             st.markdown(
@@ -98,6 +87,8 @@ if selected=="Intro":
                 """
                 asdddddddddddddddddddd
                 """)
+
+    
 
     
 
