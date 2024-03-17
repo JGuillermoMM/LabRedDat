@@ -12,12 +12,15 @@ import json
 from streamlit_lottie import st_lottie
 
 
+<<<<<<< HEAD
 
 
 
 
 
 
+=======
+>>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
 #Layout
 st.set_page_config(
     page_title="Practica 1",
@@ -49,13 +52,20 @@ def pull_clean():
 
 #Options Menu
 with st.sidebar:
+<<<<<<< HEAD
     selected = option_menu('Menu', ["Intro", 'Graficas'], 
         icons=['comment-alt','stats'],menu_icon='intersect', default_index=0)
+=======
+    selected = option_menu('Menu', ["Intro", 'Graficas', 'Distribucion binomial', 'Info'], 
+        icons=['comment-alt','stats','info-circle'],menu_icon='intersect', default_index=0)
+>>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
     lottie = load_lottiefile("digglet.json")
     st_lottie(lottie,key='loc')
 
+
 #Intro Page
 if selected=="Intro":
+<<<<<<< HEAD
     #Titulo Distribución binomial centrado con html
  st.markdown("""
 <style>
@@ -79,6 +89,14 @@ if selected=="Intro":
 </style>
 <div class="centered-italic">This is some centered and italicized content.</div>
 """, unsafe_allow_html=True)
+=======
+    #Header
+    st.title('Distribución Binomial')
+       # ecuacion de la distribucion binomial "https://es.wikipedia.org/wiki/Distribuci%C3%B3n_binomial"
+    st.latex(r'''
+    P(X = k) = \binom{n}{k} \cdot p^k \cdot (1 - p)^{n - k}
+    ''')
+>>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
 
  st.divider()
 
@@ -98,6 +116,7 @@ if selected=="Intro":
 <div class="big-title">Resumen</div>
 """, unsafe_allow_html=True)
             st.markdown(
+<<<<<<< HEAD
                 """
                 La distribución binomial es una función que describe la probabilidad de obtener un número específico de éxitos
                   en un número fijo de casos independientes. La distribuión binomial es ideal en casos en donde se analice el resultado de un número pequeño de posibles estados finales"""
@@ -127,6 +146,27 @@ if selected=="Intro":
                 """
                 )
 #Columna dos de introducción       
+=======
+                """ 
+                Una distribución binomial es un modelo matemático que representa la probabilidad de obtener cierta cantidad de
+                éxitos en un número fijo de intentos independientes, donde cada intento solo puede tener dos resultados posibles: éxito o fracaso.
+                Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
+                """
+                )
+            #---------------------------------------
+            st.header('Objetivos')
+             generales = [
+    "Determinar probabilidades particulares relacionadas con el número de éxitos.",
+    "Aplicar la distribución binomial en la toma de decisiones."
+]
+
+# Mostrar los objetivos generales
+st.write('### Objetivos generales:')
+for objetivo in generales:
+    st.markdown(f"- {objetivo}")
+#"Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
+            #-----------------------------------------------
+>>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
         with col2:
              st.markdown("""
               <style>
@@ -173,6 +213,8 @@ if selected=="Intro":
     
 
 
+
+
     
 #Search Page
 if selected=='Graficas':
@@ -185,9 +227,47 @@ if selected=='Graficas':
  
 
  df = pd.read_csv("ConteosDeCarasPorPareja.csv")
-
-    # Display the DataFrame in Streamlit
+  # Display the DataFrame in Streamlit
  st.dataframe(df)
 
-    # Display some statistics about the DataFrame
+   # Display some statistics about the DataFrame
  st.write(f"The DataFrame has {len(df)} rows and {len(df.columns)} columns.")
+<<<<<<< HEAD
+=======
+
+
+
+#---------------------------------------------------------------
+# Grafica
+#if selected=='Distribucion binomial':
+
+#def leer_archivo_py():
+#    try:
+ #       with open("Practica1.py", "r") as archivo:
+ #           contenido = archivo.read()
+#            st.text_area("Contenido del archivo", contenido)
+#    except FileNotFoundError:
+#        st.error("El archivo no fue encontrado.")
+
+#def main():
+ #   st.title("aaaaa")
+#    st.write("sdasdasdasd.")
+
+ #   leer_archivo_py()
+#if __name__ == "__main__":
+ #   main()
+
+#-----------------------------------------------------------------
+    
+  
+
+ 
+#About Page
+if selected=='Info': 
+    st.title('Datos')
+    st.markdown(
+                """
+                asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                """)
+
+>>>>>>> 7a2fd2812fde7f7e292aac3b47df17c037cc6d4e
