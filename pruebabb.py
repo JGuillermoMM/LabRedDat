@@ -8,10 +8,10 @@ import plotly.express as px
 import plotly.graph_objects as go
 from streamlit_option_menu import option_menu
 import json
-import requests
+
 from streamlit_lottie import st_lottie
-import pydeck as pdk
-import snowflake.connector
+
+
 
 #Layout
 st.set_page_config(
