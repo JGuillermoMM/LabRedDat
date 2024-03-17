@@ -72,12 +72,13 @@ if selected=="Intro":
                 )
             #---------------------------------------
         
-    st.header('Objetivos')
+      st.header('Objetivos')
             st.markdown(
                 """
-                 sdfsdfsdfsdf
+                asdddddddddddddddddddd
                 """
                 )
+
 
  #objetivos       
 #"Evaluar la precisión de modelos y experimentos mediante la distribución binomial."
