@@ -109,23 +109,23 @@ if selected=='Graficas':
 
 #---------------------------------------------------------------
 # Grafica
-if selected=='Distribucion binomial':
+#if selected=='Distribucion binomial':
 
-def leer_archivo_py():
-    try:
-        with open("Practica1.py", "r") as archivo:
-            contenido = archivo.read()
-            st.text_area("Contenido del archivo", contenido)
-    except FileNotFoundError:
-        st.error("El archivo no fue encontrado.")
+#def leer_archivo_py():
+#    try:
+ #       with open("Practica1.py", "r") as archivo:
+ #           contenido = archivo.read()
+#            st.text_area("Contenido del archivo", contenido)
+#    except FileNotFoundError:
+#        st.error("El archivo no fue encontrado.")
 
-def main():
-    st.title("aaaaa")
-    st.write("sdasdasdasd.")
+#def main():
+ #   st.title("aaaaa")
+#    st.write("sdasdasdasd.")
 
-    leer_archivo_py()
-if __name__ == "__main__":
-    main()
+ #   leer_archivo_py()
+#if __name__ == "__main__":
+ #   main()
 
 #-----------------------------------------------------------------
     
