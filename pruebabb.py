@@ -13,73 +13,46 @@ from streamlit_lottie import st_lottie
 
 
 
-# Layout
-st.set_page_config(
-    page_title="Practica 1",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
-# Data Pull and Functions
+# Función para leer y mostrar el contenido del archivo Practica1.py
+def leer_archivo_py():
+    try:
+        with open("Practica1.py", "r") as archivo:
+            contenido = archivo.read()
+            st.text_area("Contenido del archivo Practica1.py", contenido)
+    except FileNotFoundError:
+        st.error("El archivo no fue encontrado.")
 
-# Options Menu
-with st.sidebar:
-    selected = st.radio('Menu', ["Intro", 'Graficas', 'Distribucion binomial', 'Info'], index=0)
+# Función principal de la aplicación Streamlit
+def main():
+    st.set_page_config(
+        page_title="Practica 1",
+        layout="wide",
+        initial_sidebar_state="expanded"
+    )
 
-# Intro Page
-if selected == "Intro":
-    # Header
-    st.title('Distribución Binomial')
-    st.subheader('*asdasdassssssssssssssssssssssssssssssssssss.*')
-    st.divider()
-    # Use Cases
-    with st.container():
-        col1, col2 = st.columns(2)
-        with col1:
-            st.header('Resumen')
-            st.markdown("""
-                asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd
-            """)
-            st.header('Objetivos')
-            st.markdown("""
-                asdddddddddddddddddddd
-            """)
-        with col2:
-            st.header('Marco teorico')
-            st.markdown("""
-                asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-            """)
-            st.header('Conclusiones')
-            st.markdown("""
-                asdddddddddddddddddddd
-            """)
-    
-# Search Page
-elif selected == 'Graficas':
-    st.title("CSV File Viewer")
-    df = pd.read_csv("ConteosDeCarasPorPareja.csv")
-    st.dataframe(df)
-    st.write(f"The DataFrame has {len(df)} rows and {len(df.columns)} columns.")
+    # Opciones del menú en la barra lateral
+    with st.sidebar:
+        selected = st.radio('Menú', ["Intro", 'Gráficas', 'Distribución binomial', 'Info'], index=0)
 
-# Grafica
-elif selected == 'Distribucion binomial':
-    def leer_archivo_py():
-        try:
-            with open("Practica1.py", "r") as archivo:
-                contenido = archivo.read()
-                st.text_area("Contenido del archivo", contenido)
-        except FileNotFoundError:
-            st.error("El archivo no fue encontrado.")
+    # Páginas de la aplicación
+    if selected == "Intro":
+        st.title('Distribución Binomial')
+        st.subheader('*asdasdassssssssssssssssssssssssssssssssssss.*')
+        st.divider()
+        # Aquí puedes agregar el contenido de la página de introducción
+    elif selected == 'Gráficas':
+        st.title("CSV File Viewer")
+        df = pd.read_csv("ConteosDeCarasPorPareja.csv")
+        st.dataframe(df)
+        st.write(f"El DataFrame tiene {len(df)} filas y {len(df.columns)} columnas.")
+    elif selected == 'Distribución binomial':
+        leer_archivo_py()
+    elif selected == 'Info': 
+        st.title('Datos')
+        st.markdown("""
+            asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+        """)
 
-    def main():
-        st.title("aaaaa")
-        st.write("sdasdasdasd.")
-
+if __name__ == "__main__":
     main()
-
-# About Page
-elif selected == 'Info': 
-    st.title('Datos')
-    st.markdown("""
-        asdasdasdsaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-    """)
