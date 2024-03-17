@@ -22,7 +22,7 @@ st.set_page_config(
 
 # Options Menu
 with st.sidebar:
-    selected = st.radio('Menu', ["Intro", 'Graficas','Info', 'Distribucion binomial'], index=0)
+    selected = st.radio('Menu', ["Intro", 'Graficas', 'Distribucion binomial', 'Info'], index=0)
 
 # Intro Page
 if selected == "Intro":
@@ -65,7 +65,7 @@ elif selected == 'Graficas':
 
 # Grafica
 elif selected == 'Distribucion binomial':
-    def leer_archivo_py():
+    def leer_archivo_py(archivo):
         try:
             with open("Practica1.py", "r") as archivo:
                 contenido = archivo.read()
@@ -77,7 +77,7 @@ elif selected == 'Distribucion binomial':
         st.title("aaaaa")
         st.write("sdasdasdasd.")
 
-        leer_archivo_py()
+        leer_archivo_py(archivo)
 
     if __name__ == "__main__":
         main()
