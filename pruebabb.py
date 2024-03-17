@@ -56,13 +56,9 @@ if selected == "Intro":
     
 # Search Page
 elif selected == 'Graficas':
-    # Add a title to the app
     st.title("CSV File Viewer")
-    # Add a file uploader to the app
     df = pd.read_csv("ConteosDeCarasPorPareja.csv")
-    # Display the DataFrame in Streamlit
     st.dataframe(df)
-    # Display some statistics about the DataFrame
     st.write(f"The DataFrame has {len(df)} rows and {len(df.columns)} columns.")
 
 # Grafica
