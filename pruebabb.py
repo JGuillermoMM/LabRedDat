@@ -67,18 +67,22 @@ if selected=="Intro":
                 Cada intento se considera independiente entre sí y la probabilidad de éxito en cada uno permanece constante.
                 """
                 )
-            
-            st.header('Objetivos')             
-            objetivos = [
-              " Determinar probabilidades particulares relacionadas con el número de éxitos.",
+     
+        
+        objetivos = [
+   " Determinar probabilidades particulares relacionadas con el número de éxitos.",
               "Aplicar la distribución binomial en la toma de decisiones.",
-              "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.",
-            ]
+              "Evaluar la precisión de modelos y experimentos mediante la distribución binomial.","
+]
 
-st.write('### Objetivos:')
+# Mostrar objetivos
 for objetivo in objetivos:
-    st.write(f"- {objetivo}")
-           
+    st.markdown(f"- {objetivo}")
+    
+
+
+
+        
             
         with col2:
             st.header('Marco teorico')
