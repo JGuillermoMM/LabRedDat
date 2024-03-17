@@ -69,7 +69,7 @@ if selected=="Intro":
                 )
      
         
-    # Encabezado para los objetivos
+# Encabezado para los objetivos
 st.header('Objetivos')
 
 # Lista de objetivos
