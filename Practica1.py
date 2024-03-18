@@ -3,19 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.stats import binom
 
-#para la musica
-from pydub import AudioSegment
-from pydub.playback import play
-
-# Función para reproducir música
-def play_music(file_url):
-    audio = AudioSegment.from_file(file_url)
-    play(audio)
-
-# URL directa del archivo de música en GitHub
-music_file_url = "https://github.com/xx-Shinei-xx/Practica-1/raw/main/mainca.mp3"
-#https://github.com/xx-Shinei-xx/Practica-1/blob/main/mainca.mp3
-
+  
 
 # Datos de las caras de las monedas
 listas = {
@@ -74,12 +62,7 @@ def main():
     std_dev_color = st.color_picker('Color de la desviación estándar:', '#ffa500')
 
     plot_histogram(dataset, m, hist_color, fit_color, mean_color, std_dev_color)
-
-
-# Botón para reproducir música
-if st.button('Reproducir música'):
-    play_music(music_file_url)
-
+ 
 
 
 if __name__ == '__main__':
