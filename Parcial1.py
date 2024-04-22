@@ -16,37 +16,14 @@ st.markdown("también es posible elegir que tipo de grafica representará la dis
 #el st.ltex permite ingresar codigo en latex y presentarlo en nuestro streamlit
 st.latex(r'''P(X = k) = \binom{n}{k} p^k (1-p)^{n-k}''')
 #el st.number son las cajas que presenta el streamlit done se ponen los datos y se guardan en estas variables
-n = st.number_input("Introduzca el valor de n", value=1)
-p = st.number_input("Introduzca el valor de p",value= 0.5)
-Li = st.number_input("Introduzca el caso minimo de exitos que espera ")
-Ls = st.number_input("Introduzca el caso maximo de exitos que espera ")
+n =  st.sidebar.slider("Valores para n", 0, 99, 100)
+p = st.sidebar.slider("Valores para p", 0.0, 1.0, 0.05)
+#Li = st.number_input("Introduzca el caso minimo de exitos que espera ")
+#Ls = st.number_input("Introduzca el caso maximo de exitos que espera ")
 #Genera una variable con limites, en este aso las variables anteriores son sus limites
-x = np.linspace(Li, Ls, num=15)
+x = np.linspace(0, 150, 100)
 #se declara una función y entre parentesis se aclara de que variables dependera 
-def verificar_valores(p,n,Ls,Li):
-    #este if funciona para que el boton evalue los datos que se enuentran en las cajas
-    if st.button("Verificar valores"):
-    #Los siguientes if/else permite evalaur los datos que estan en las cajar y sacar un aviso que le indique al usuario si los datos son permitidos o los tiene que cambiar
-        #los st.succes y st.error muestrar un mensaje de error o de exito en el streamlit
-        if Ls <= 150:
-            st.success("Los valores para el limite superior son correctos")
-        else:
-            st.error("Solo son permitidos valores menores a 150 para el limite superior")
-        if Li >= 0:
-            st.success("Los valores para el limite inferior son correctos")
-        else:
-            st.error("Solo son permitidos valores mayores a 0 para el limite inferior")           
-        if p <= 1:
-             st.success("Los valores para p son correctos")
-        else:
-            st.error("Ingrese un valor de probabilidad correcto, menor a 1 ")          
-        if n <= 99:
-           st.success("Los valores para n son correctos")
-        else:
-           st.error("Solo son permitidos valores menores a 100 para n") 
-#se llama a la función que definimos antes para evaluar los datos de las cajas
-verificar_valores(p,n,Ls,Li) 
-#creo otra función para calcula la istribución binomial, aqui se utilizo una libreria para optimizar calculos :p
+
 def db(n,p,x):
     coeficiente = comb(n, x)#aqui es done se aplico el paquete 
     probabilidad = coeficiente * (p*x) * ((1-p)*(n-x))
@@ -64,7 +41,7 @@ if tgraf == 'Scattering':#Aqui si la respuesta fue tipo Scattering
     title='Distribución Binomial',
     xaxis=dict(title='Casos de Exito'),
     yaxis=dict(title='Probabilidad de que sucedan los casos'),
-    plot_bgcolor='#F5F5DC',
+    plot_bgcolor='white',
     legend=dict(title='Datos'))
     st.plotly_chart(grafica)
 else:#Aqui si la respuesta fue tipo Scattering
@@ -73,7 +50,7 @@ else:#Aqui si la respuesta fue tipo Scattering
    title='Distribución Binomial',
     xaxis=dict(title='Casos de Exito'),
     yaxis=dict(title='Probabilidad de que sucedan los casos'),
-    plot_bgcolor='#F5F5DC',
+    plot_bgcolor='white',
     legend=dict(title='Datos'))
    #esto muestra la grafica en el streamlit 
     st.plotly_chart(grafica)
